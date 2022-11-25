@@ -1,0 +1,296 @@
+{
+    "input_data_path": "http://hachyderm-aquarium.vercel.app/api/mastodon-activities",
+    "display_time": 360,
+    "backgrounds": [
+        "background.png",
+    ],
+    "water_sprite": "water.png",
+    "fishes": {
+        "crab": {
+            "texture": "ferris.png",
+            "size": 7.0,
+            "size_randomness": 1.0,
+            "movement": "Crab",
+            "bubbles": 0,
+            "collision_aversion": 0,
+            "speed": {
+                "x": 12.0,
+                "y": 4.0
+            },
+            "speed_randomness": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "area": {
+                "x": 5.0,
+                "y": 56.0,
+                "w": 90.0,
+                "h": 6.0
+            }
+        },
+        "clownfish": {
+            "texture": "clownfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Accelerating",
+            "bubbles": 25,
+            "collision_aversion": 0.25,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "angelfish": {
+            "texture": "angelfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "SingleSpeed",
+            "bubbles": 25,
+            "collision_aversion": 0.1,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "goldfish": {
+            "texture": "goldfish.png",
+            "size": 6.0,
+            "size_randomness": 1.0,
+            "movement": "SingleSpeed",
+            "bubbles": 25,
+            "collision_aversion": 0.25,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "yellowfish": {
+            "texture": "yellowfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Random",
+            "bubbles": 25,
+            "collision_aversion": 0.3,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "seahorse": {
+            "texture": "seahorse.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Accelerating",
+            "bubbles": 5,
+            "collision_aversion": 0.05,
+            "speed": {
+                "x": 6.0,
+                "y": 3.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "royalgramma": {
+            "texture": "royalgramma.png",
+            "size": 5.0,
+            "size_randomness": 0.5,
+            "movement": "AcceleratingEdgeIdling",
+            "bubbles": 25,
+            "collision_aversion": 0.4,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "butterflyfish": {
+            "texture": "butterflyfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Random",
+            "bubbles": 25,
+            "collision_aversion": 0.2,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "lionfish": {
+            "texture": "lionfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Accelerating",
+            "bubbles": 25,
+            "collision_aversion": 0.6,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "turtle": {
+            "texture": "turtle.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "SingleSpeed",
+            "bubbles": 0,
+            "collision_aversion": 0,
+            "speed": {
+                "x": 10.0,
+                "y": 4.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "neontetra": {
+            "texture": "neontetra.png",
+            "size": 4.0,
+            "size_randomness": 0.5,
+            "movement": "Accelerating",
+            "bubbles": 0,
+            "collision_aversion": 0.95,
+            "speed": {
+                "x": 8.0,
+                "y": 4.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "yellowangelfish": {
+            "texture": "yellowangelfish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "Random",
+            "bubbles": 25,
+            "collision_aversion": 0.3,
+            "speed": {
+                "x": 15.0,
+                "y": 6.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        },
+        "zebrafish": {
+            "texture": "zebrafish.png",
+            "size": 7.0,
+            "size_randomness": 0.5,
+            "movement": "AcceleratingEdgeIdling",
+            "bubbles": 10,
+            "collision_aversion": 0.3,
+            "speed": {
+                "x": 6.0,
+                "y": 3.0
+            },
+            "speed_randomness": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "area": {
+                "x": 5.0,
+                "y": 5.0,
+                "w": 90.0,
+                "h": 52.5
+            }
+        }
+    }
+}

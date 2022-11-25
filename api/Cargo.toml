@@ -1,0 +1,22 @@
+[package]
+name = "mastodon-aquarium"
+version = "1.0.0"
+authors = [ "Olle Wreede <olle@wreede.se>" ]
+edition = "2021"
+
+[dependencies]
+http = "0.1"
+nanoserde = "0.1.32"
+vercel_lambda = "*"
+
+  [dependencies.reqwest]
+  version = "0.11"
+  features = [ "blocking" ]
+
+[lib]
+name = "librustymastodon"
+path = "_lib.rs"
+
+[[bin]]
+name = "mastodon-activities"
+path = "/Users/olle/Development/mine/hachyderm-aquarium/api/mastodon-activities.rs"
