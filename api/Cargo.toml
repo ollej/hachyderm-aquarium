@@ -19,4 +19,4 @@ path = "_lib.rs"
 
 [[bin]]
 name = "mastodon-activities"
-path = "/Users/olle/Development/mine/hachyderm-aquarium/api/mastodon-activities.rs"
+path = "mastodon-activities.rs"
