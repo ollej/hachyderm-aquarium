@@ -1,4 +1,4 @@
-use librustymastodon::{build_school, get_activities, FishLegend, InputData, Legend};
+use librustymastodon::{build_school, get_activities, FishData, FishLegend, InputData, Legend};
 use std::error::Error;
 use vercel_lambda::{error::VercelError, lambda, IntoResponse, Request};
 
@@ -13,13 +13,25 @@ fn handler(_: Request) -> Result<impl IntoResponse, VercelError> {
                 fish: "clownfish".to_string(),
                 description: "One week of activity".to_string(),
             },
+            FishLegend {
+                fish: "ferris".to_string(),
+                description: "Ferris helps to monitor the aquarium".to_string(),
+            },
         ],
     };
     match data {
-        Ok(school) => librustymastodon::build_response(InputData {
-            legend: Some(legend),
-            school,
-        }),
+        Ok(mut school) => {
+            school.push(FishData {
+                fish: "ferris".to_string(),
+                size: 1.0,
+                speed: 1.0,
+                bubbles: 0.0,
+            });
+            librustymastodon::build_response(InputData {
+                legend: Some(legend),
+                school,
+            })
+        }
         Err(err) => librustymastodon::build_error_response(err.to_string()),
     }
 }
