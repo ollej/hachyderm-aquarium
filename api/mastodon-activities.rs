@@ -22,7 +22,7 @@ fn handler(_: Request) -> Result<impl IntoResponse, VercelError> {
     match data {
         Ok(mut school) => {
             school.push(FishData {
-                fish: "ferris".to_string(),
+                fish: "crab".to_string(),
                 size: 1.0,
                 speed: 1.0,
                 bubbles: 0.0,
